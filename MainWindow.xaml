@@ -1,0 +1,38 @@
+﻿<Window x:Class="_1_pr.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1_pr"
+        mc:Ignorable="d"
+        Title="Калькулятор" ResizeMode="NoResize" Height="437" Width="440">
+    <Grid Height="437" Width="440">
+        <TextBox x:Name="WindowForm1"  HorizontalAlignment="Left" Margin="10,25,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="56" TextChanged="WindowForm1_TextChanged" FontSize="48" TextAlignment="Right" IsReadOnly="True"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="95,269,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Num_Determination" FontSize="18" />
+        <Button Content="=" HorizontalAlignment="Left" Margin="265,269,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Equally" FontSize="18"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="10,208,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Num_Determination" FontSize="18"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="95,208,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Num_Determination" FontSize="18"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="180,208,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Num_Determination" FontSize="18"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="265,208,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Sign_Determination" FontSize="18"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="10,147,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Num_Determination" FontSize="18"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="95,147,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Num_Determination" FontSize="18"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="180,147,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Num_Determination" FontSize="18"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="265,147,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Sign_Determination" FontSize="18"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Num_Determination" FontSize="18"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="95,86,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Num_Determination" FontSize="18"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="180,86,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Num_Determination" FontSize="18"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="265,86,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Sign_Determination" FontSize="18"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="265,25,25,0" VerticalAlignment="Top" Height="56" Width="75" Click="Sign_Determination" FontSize="18"/>
+        <Button Content="C" HorizontalAlignment="Left" Margin="10,269,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Clear" FontSize="18" />
+        <Button Content="del" HorizontalAlignment="Left" Margin="180,269,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Delete" FontSize="18" />
+        <Button Content="," HorizontalAlignment="Left" Margin="179,335,0,0" VerticalAlignment="Top" Height="56" Width="75" Click="Num_Determination" FontSize="18" />
+        <Menu Height="20" VerticalAlignment="Top" Background="White">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit" Click="Close_event"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="About me" Click="Documentation"></MenuItem>
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
